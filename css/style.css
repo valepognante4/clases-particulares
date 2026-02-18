@@ -332,36 +332,40 @@ button {
 
 .text-bg h1 {
      color: #f1f1f1;
-     font-size: 90px;
+     font-size: clamp(40px, 8vw, 90px);
      line-height: 110px;
      font-weight: bold;
 }
 
 .text-bg p {
      color: #fff;
-     font-size: 25px;
+     font-size: clamp(16px, 3.5vw, 25px);
      line-height: 28px;
      padding: 40px 0;
 }
-
 .text-bg a {
-     font-size: 17px;
-     background-color: #fff;
-     color: #000;
-     padding: 13px 0px;
-     width: 100%;
-     max-width: 190px;
-     text-align: center;
-     display: inline-block;
-     transition: ease-in all 0.5s;
+    font-size: clamp(14px, 3vw, 17px);
+    background-color: #fff;
+    color: #000;
+    padding: clamp(10px, 2.5vw, 13px) 0;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s ease;
+    border-radius: 8px; /* mejor que ya tenga forma */
 }
 
 .text-bg a:hover {
-     background-color: #5f7762;
-     color: #000;
-     transition: ease-in all 0.5s;
-     border-radius: 26px;
+    background-color: #5f7762;
+    color: #000;
+    border-radius: 26px;
 }
+
+.text-bg a:active {
+    transform: scale(0.97);
+}
+
 .text-img {
     display: flex;
     justify-content: center;
@@ -870,4 +874,70 @@ ul.social_icon li a:hover {
 
 
 /** end footer **/
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        padding: 15px 15px;
+        position: relative;   /* 👈 agregá esto acá */
+    }
+
+    /* Banner */
+    .banner_main {
+        padding: 120px 0 60px 0;
+        text-align: center;
+    }
+
+    .text-bg {
+        text-align: center;
+    }
+
+    .text-bg h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .text-bg p {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+
+    .text-img img {
+        width: 100%;
+        max-width: 320px;
+        margin-top: 30px;
+    }
+
+    /* Servicios */
+    .services_section .titlepage h2 {
+        font-size: 30px;
+    }
+
+    /* Modalidad */
+    .modalidad h2 {
+        font-size: 28px;
+    }
+
+    .modalidad-box {
+        padding: 35px 20px;
+    }
+
+    .modalidad-circulos {
+        gap: 25px;
+    }
+
+    /* Contacto */
+    .contact h2 {
+        font-size: 32px;
+    }
+}
+
+
+
+
+
 
