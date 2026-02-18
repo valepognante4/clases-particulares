@@ -880,46 +880,72 @@ ul.social_icon li a:hover {
 
 @media (max-width: 768px) {
 
-    /* Header */
+    /* ================= HEADER ================= */
     .header {
-        padding: 15px 15px;
-        position: relative;   /* 👈 agregá esto acá */
+        padding: 15px;
+        position: relative;
     }
 
-    /* Banner */
+    /* ================= HERO ================= */
+
     .banner_main {
-        padding: 120px 0 60px 0;
-        text-align: center;
+        padding: 130px 0 70px 0;
+        text-align: left;
     }
 
     .text-bg {
-        text-align: center;
+        text-align: left;
+        padding: 0 25px;
+        position: relative;
+        z-index: 2;
     }
 
     .text-bg h1 {
-        font-size: 42px;
-        line-height: 50px;
+        font-size: 36px;
+        line-height: 44px;
     }
 
     .text-bg p {
-        font-size: 18px;
-        padding: 20px 0;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 0;
+        max-width: 320px;
+    }
+
+    .text-bg a {
+        margin-top: 10px;
+    }
+
+    /* Imagen */
+    .text-img {
+        text-align: center;
+        position: relative;
+        z-index: 2;
     }
 
     .text-img img {
-        width: 100%;
-        max-width: 320px;
-        margin-top: 30px;
+    width: 100%;
+    max-width: 260px;   /* más chica */
+    margin-top: 30px;
     }
 
-    /* Servicios */
+   .head_top::after {
+    width: 650px;
+    height: 650px;
+    right: -300px;
+    top: -220px;
+    }
+
+    /* ================= SERVICIOS ================= */
+
     .services_section .titlepage h2 {
         font-size: 30px;
     }
 
-    /* Modalidad */
+    /* ================= MODALIDAD ================= */
+
     .modalidad h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .modalidad-box {
@@ -930,11 +956,31 @@ ul.social_icon li a:hover {
         gap: 25px;
     }
 
-    /* Contacto */
+    /* ================= CONTACTO ================= */
+
     .contact h2 {
-        font-size: 32px;
+        font-size: 30px;
     }
+    /* Logo más chico en mobile */
+.navbar-brand img {
+    max-width: 120px;
+    height: auto;
 }
+
+/* Alinear logo y botón */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Ajuste botón hamburguesa */
+.navbar-toggler {
+    padding: 5px 8px;
+}
+
+}
+
 
 
 
