@@ -880,84 +880,92 @@ ul.social_icon li a:hover {
 
 @media (max-width: 768px) {
 
-   /* ================= HEADER ================= */
+    /* ================= HEADER ================= */
 
-.header {
-    padding: 12px 15px;
-    position: relative;
-}
+    .header {
+        padding: 12px 15px;
+        background-color: #b6bfa4;
+    }
 
-/* Logo más chico */
-.logo img {
-    max-width: 110px;
-    height: auto;
-}
+    .header .row {
+        display: flex;
+        align-items: center;
+    }
 
-/* Alinear logo y hamburguesa */
-.row {
-    align-items: center;
-}
+    .logo_section {
+        display: flex;
+        align-items: center;
+    }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+    .logo img {
+        max-width: 95px;
+        height: auto;
+    }
 
-.navbar-toggler {
-    padding: 4px 6px;
-}
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 
+    .navbar {
+        padding: 0;
+    }
 
-/* ================= HERO ================= */
-
-.banner_main {
-    padding: 120px 0 60px 0;
-}
-
-/* TEXTO */
-.text-bg {
-    padding-left: 15px;
-    padding-right: 10px;
-    z-index: 2;
-}
-
-.text-bg h1 {
-    font-size: 26px;
-    line-height: 32px;
-    margin-bottom: 10px;
-}
-
-.text-bg p {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 12px;
-}
-
-.text-bg a {
-    font-size: 13px;
-    padding: 8px 0;
-}
+    .navbar-toggler {
+        padding: 4px 6px;
+        margin: 0;
+        border: none;
+    }
 
 
-/* IMAGEN */
-.text-img {
-    z-index: 2;
-}
+    /* ================= HERO ================= */
 
-.text-img img {
-    max-width: 200px;
-    width: 100%;
-}
+    .banner_main {
+        padding: 110px 0 60px 0;
+    }
+
+    .text-bg {
+        padding-left: 15px;
+        padding-right: 10px;
+        z-index: 2;
+    }
+
+    .text-bg h1 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .text-bg p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    .text-bg a {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    .text-img {
+        z-index: 2;
+    }
+
+    .text-img img {
+        max-width: 200px;
+        width: 100%;
+    }
 
 
-/* CÍRCULO */
-.head_top::after {
-    width: 520px;
-    height: 520px;
-    right: -220px;
-    top: -180px;
-}
+    /* ================= CÍRCULO ================= */
+
+    .head_top::after {
+        width: 520px;
+        height: 520px;
+        right: -80px;
+        top: -150px;
+    }
 
 
     /* ================= SERVICIOS ================= */
@@ -985,25 +993,9 @@ ul.social_icon li a:hover {
     .contact h2 {
         font-size: 30px;
     }
-    /* Logo más chico en mobile */
-.navbar-brand img {
-    max-width: 120px;
-    height: auto;
-}
-
-/* Alinear logo y botón */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Ajuste botón hamburguesa */
-.navbar-toggler {
-    padding: 5px 8px;
-}
 
 }
+
 
 
 
