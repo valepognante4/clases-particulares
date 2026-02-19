@@ -877,19 +877,21 @@ ul.social_icon li a:hover {
 /* =========================
    RESPONSIVE MOBILE
 ========================= */
-
 @media (max-width: 768px) {
 
     /* ================= HEADER ================= */
 
     .header {
-        padding: 12px 15px;
-        background-color: #b6bfa4;
+        padding: 12px 18px;
+        background-color: rgba(182, 191, 164, 0.95);
+        backdrop-filter: blur(4px);
     }
 
     .header .row {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
     .logo_section {
@@ -921,80 +923,106 @@ ul.social_icon li a:hover {
 
     /* ================= HERO ================= */
 
+    .head_top {
+        background-color: #b6bfa4 !important;
+        position: relative;
+        overflow: hidden;
+    }
+
     .banner_main {
-        padding: 110px 0 60px 0;
+        padding: 85px 0 55px 0;
+    }
+
+    .banner_main .row {
+        flex-direction: column;
+        text-align: center;
     }
 
     .text-bg {
-        padding-left: 15px;
-        padding-right: 10px;
+        padding: 0 20px;
         z-index: 2;
     }
 
     .text-bg h1 {
-        font-size: 26px;
-        line-height: 32px;
-        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 14px;
     }
 
     .text-bg p {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 12px;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 18px;
     }
 
     .text-bg a {
-        font-size: 13px;
-        padding: 8px 0;
+        font-size: 14px;
+        padding: 10px 22px;
+        display: inline-block;
     }
 
     .text-img {
+        margin-top: 25px;
         z-index: 2;
     }
 
     .text-img img {
-        max-width: 200px;
-        width: 100%;
+        width: 85%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
     }
 
 
     /* ================= CÍRCULO ================= */
 
     .head_top::after {
-        width: 520px;
-        height: 520px;
-        right: -80px;
-        top: -150px;
+        content: "";
+        position: absolute;
+        width: 360px;
+        height: 360px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -180px; /* hace que se vea solo medio círculo */
+        background: inherit; /* mantiene tu color */
+        border-radius: 50%;
+        z-index: 1;
     }
 
 
     /* ================= SERVICIOS ================= */
 
     .services_section .titlepage h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
+
 
     /* ================= MODALIDAD ================= */
 
     .modalidad h2 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .modalidad-box {
-        padding: 35px 20px;
+        padding: 28px 18px;
     }
 
     .modalidad-circulos {
-        gap: 25px;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
     }
+
 
     /* ================= CONTACTO ================= */
 
     .contact h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
 }
+
+
 
 
 
