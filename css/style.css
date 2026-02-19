@@ -948,6 +948,7 @@ ul.social_icon li a:hover {
 .text-bg {
     width: 100% !important;
     text-align: left !important;
+    margin-top: 60px;
 }
 
 .text-bg h1 {
@@ -1006,31 +1007,23 @@ ul.social_icon li a:hover {
     /* ================= SOBRE MIS CLASES ================= */
 
 .modalidad-circulos {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    justify-items: center;
 }
 
-.modalidad-circulos > div:nth-child(4) {
-    grid-column: 1 / 2;
+.modalidad-circulos .item:first-child {
+    grid-column: span 2;
 }
 
-.modalidad-circulos > div:nth-child(5) {
-    grid-column: 3 / 4;
-}
 
 
 
     /* ================= CONTACTO ================= */
     /* ================= TITULOS IGUALES ================= */
 
-.services_section .titlepage h2,
-.contact h2 {
+.contact .titlepage h2 {
     font-size: 28px !important;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 15px;
 }
 section {
     padding: 50px 0 !important;
