@@ -923,71 +923,47 @@ ul.social_icon li a:hover {
 
     /* ================= HERO ================= */
 
-    .head_top {
-        background-color: #b6bfa4 !important;
-        position: relative;
-        overflow: hidden;
-    }
+.head_top {
+    background: #b6bfa4 !important;
+    position: relative;
+    overflow: hidden;
+}
 
-    .banner_main {
-        padding: 85px 0 55px 0;
-    }
+.banner_main {
+    padding: 90px 0 60px 0;
+}
 
-    .banner_main .row {
-        flex-direction: column;
-        text-align: center;
-    }
+.banner_main .row {
+    flex-direction: column;
+    text-align: center;
+}
 
-    .text-bg {
-        padding: 0 20px;
-        z-index: 2;
-    }
+/* ================= IMAGEN ================= */
 
-    .text-bg h1 {
-        font-size: 28px;
-        line-height: 34px;
-        margin-bottom: 14px;
-    }
+.text-img {
+    margin-top: 30px;
+}
 
-    .text-bg p {
-        font-size: 15px;
-        line-height: 22px;
-        margin-bottom: 18px;
-    }
+.text-img img {
+    width: 85%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+}
 
-    .text-bg a {
-        font-size: 14px;
-        padding: 10px 22px;
-        display: inline-block;
-    }
+/* ================= CÍRCULO ================= */
 
-    .text-img {
-        margin-top: 25px;
-        z-index: 2;
-    }
-
-    .text-img img {
-        width: 85%;
-        max-width: 320px;
-        display: block;
-        margin: 0 auto;
-    }
-
-
-    /* ================= CÍRCULO ================= */
-
-    .head_top::after {
-        content: "";
-        position: absolute;
-        width: 360px;
-        height: 360px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -180px; /* hace que se vea solo medio círculo */
-        background: inherit; /* mantiene tu color */
-        border-radius: 50%;
-        z-index: 1;
-    }
+.head_top::after {
+    width: 500px;
+    height: 500px;
+    right: -200px;
+    top: -50px;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    background: #dfe5cf; /* mismo verde claro del desktop */
+    border-radius: 50%;
+}
 
 
     /* ================= SERVICIOS ================= */
