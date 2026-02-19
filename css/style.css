@@ -934,32 +934,28 @@ ul.social_icon li a:hover {
     width: 100%;
     padding: 100px 20px 40px;
 }
-
 .banner_main .row {
-    display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
 .text-bg {
-    text-align: left;
-    margin: 0;
-    padding: 0;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.text-img {
+    width: 100% !important;
+}
+
+.text-img img {
+    width: 100% !important;
+    max-width: none !important;
 }
 
 .text-bg h1,
 .text-bg p,
 .text-bg a {
     margin-bottom: 10px;
-}
-
-.text-img {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.text-img img {
-    width: 100%;
-    height: auto;
 }
 
 .head_top::after {
