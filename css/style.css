@@ -923,72 +923,64 @@ ul.social_icon li a:hover {
     /* ================= HERO ================= */
 
     /* HERO CONTENEDOR */
-    .head_top {
-        background: #b6bfa4;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .banner_main {
-        padding: 140px 20px 80px 20px;
-        position: relative;
-        z-index: 2;
-    }
-    
-
-    .banner_main .row {
-        flex-direction: column;
-        align-items: flex-start; /* clave */
-        text-align: left; /* clave */
-    }
-
-    /* TEXTO */
-    .text-bg {
-    max-width: 100%;
-    width: 100%;
+    /* HERO CONTENEDOR */
+.head_top {
+    background: #b6bfa4;
     position: relative;
-    z-index: 2;
-    }
+    overflow: hidden;
+}
+
+/* CONTENIDO */
+.banner_main {
+    padding: 120px 25px 60px 25px;
+}
+
+/* FORZAMOS COLUMNA */
+.banner_main .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
 
 
-    .text-bg h1 {
-        font-size: 30px;
-        line-height: 36px;
-    }
+    .text-bg {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+}
 
-    .text-bg p {
-        font-size: 16px;
-        line-height: 24px;
-    }
+.text-bg h1 {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.text-bg p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
 
     /* CÍRCULO */
-     .head_top::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    background: #dfe5cf;
-    border-radius: 50%;
-    right: -120px;
-    top: 60px;
-    z-index: 1;
+    .head_top::after {
+    display: none;
     }
 
-
-    /* IMAGEN */
+    /*IMAGEN*/
     .text-img {
-        position: relative;
-        z-index: 3;
-        margin-top: 40px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
 
-    .text-img img {
-        width: 75%; /* más grande */
-        max-width: 300px;
-    }
+.text-img img {
+    width: 90%;
+    max-width: 360px;
+}
+
 
     /* ================= SERVICIOS ================= */
 
