@@ -922,33 +922,41 @@ ul.social_icon li a:hover {
 
     /* ================= HERO ================= */
 /* ================= HERO MOBILE FIX DEFINITIVO ================= */
-
-.head_top {
-    padding-top: 0 !important;
-}
-
-.banner_main {
-    padding: 0 20px !important;
-}
+/* ================= HERO MOBILE CENTRADO ================= */
 
 .banner_main .container {
-    padding-top: 100px !important;  /* 👈 baja todo el bloque */
+    padding-top: 90px !important;   /* separa del header */
+    text-align: center;
+}
+
+.banner_main .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text-bg {
-    margin-top: 0 !important;
-}
-
-.text-bg h1 {
+    width: 100% !important;
     margin: 0 !important;
-    line-height: 1.05;
+    text-align: center;
 }
 
+/* TÍTULO */
+.text-bg h1 {
+    margin: 0 0 8px 0 !important;
+    line-height: 1.1;
+}
+
+/* DESCRIPCIÓN */
 .text-bg p {
-    margin-top: 5px !important;
-    margin-bottom: 15px !important;
+    margin: 0 0 15px 0 !important;
 }
 
+/* BOTÓN */
+.text-bg a {
+    display: inline-block;
+    margin: 0 0 25px 0 !important;
+}
 
 /* IMAGEN */
 .text-img {
@@ -958,10 +966,11 @@ ul.social_icon li a:hover {
 }
 
 .text-img img {
-    width: 95% !important;        /* bien grande */
-    max-width: 380px;
+    width: 95% !important;
+    max-width: 360px;
     height: auto;
 }
+
 
 .head_top::after {
     display: none;
