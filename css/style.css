@@ -922,8 +922,6 @@ ul.social_icon li a:hover {
 
     /* ================= HERO ================= */
 
-    /* ===== HERO MOBILE CORRECTO ===== */
-
 .head_top {
     min-height: 100vh;
     display: flex;
@@ -932,50 +930,47 @@ ul.social_icon li a:hover {
 
 .banner_main {
     width: 100%;
-    padding: 0 25px;
-}
-
-.banner_main .container {
-    height: 100%;
+    padding: 120px 20px 60px;
 }
 
 .banner_main .row {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
 }
 
 .text-bg {
     text-align: left;
+    margin-top: 60px;
     margin-bottom: 30px;
-    margin-top: 80px;
 }
 
 .text-bg h1 {
-    font-size: 34px;
-    line-height: 42px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 12px;
 }
 
 .text-bg p {
-    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 20px;
 }
 
 .text-img {
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .text-img img {
-    width: 160%;
-    max-width: none;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
 }
 
-
-    /* CÍRCULO */
-    .head_top::after {
+.head_top::after {
     display: none;
-    }
+}
 
  
 
