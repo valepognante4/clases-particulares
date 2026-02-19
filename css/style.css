@@ -926,10 +926,14 @@ ul.social_icon li a:hover {
 .head_top,
 .banner_main,
 .banner_main .container,
-.banner_main .row,
-.banner_main .col-md-6 {
+.banner_main .row{
     padding: 0 !important;
     margin: 0 !important;
+}
+
+.banner_main .col-md-6 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 
 .banner_main .container {
