@@ -933,57 +933,43 @@ ul.social_icon li a:hover {
     display: block;
 }
 
-/* CONTENIDO */
+/* ===== FIX HERO MOBILE DEFINITIVO ===== */
+
 .banner_main {
-    padding: 160px 25px 80px 25px;
+    padding: 140px 20px 60px 20px !important;
 }
 
-/* FORZAMOS COLUMNA */
+.banner_main .container,
 .banner_main .row {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    display: block !important;
 }
 
-
-    .text-bg {
-    width: 100%;
-    max-width: 320px;
-    margin-top: 40px;
+.text-bg {
+    text-align: left !important;
+    margin-top: 20px !important;
+    max-width: 100% !important;
 }
 
 .text-bg h1 {
-    font-size: 34px;
-    line-height: 40px;
-    margin-bottom: 15px;
+    line-height: 42px !important;
 }
 
-.text-bg p {
-    font-size: 17px;
-    line-height: 26px;
-    margin-bottom: 25px;
+.text-img {
+    margin-top: 40px !important;
+    text-align: center !important;
 }
 
+.text-img img {
+    width: 95% !important;
+    max-width: none !important;
+}
 
     /* CÍRCULO */
     .head_top::after {
     display: none;
     }
 
-    /*IMAGEN*/
-    .text-img {
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.text-img img {
-    width: 100%;
-    max-width: 420px;
-}
-
+ 
 
     /* ================= SERVICIOS ================= */
 
