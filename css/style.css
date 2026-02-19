@@ -929,12 +929,19 @@ ul.social_icon li a:hover {
 
 .banner_main {
     width: 100%;
-    padding: 40px 20px 20px;       /* antes tenías 100px arriba */
+    padding: 30px 20px 20px !important;
+    margin: 0 !important;
 }
 
 .banner_main .row {
     flex-direction: column !important;
     gap: 20px;                     /* espacio controlado */
+}
+/* RESET ESPACIOS HERO */
+.head_top,
+.banner_main,
+.banner_main .row {
+    margin: 0 !important;
 }
 
 /* TEXTO */
@@ -996,18 +1003,39 @@ ul.social_icon li a:hover {
         padding: 28px 18px;
     }
 
-    .modalidad-circulos {
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-    }
+    /* ================= SOBRE MIS CLASES ================= */
+
+.modalidad-circulos {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.modalidad-circulos > div:nth-child(4) {
+    grid-column: 1 / 2;
+}
+
+.modalidad-circulos > div:nth-child(5) {
+    grid-column: 3 / 4;
+}
+
 
 
     /* ================= CONTACTO ================= */
+    /* ================= TITULOS IGUALES ================= */
 
-    .contact h2 {
-        font-size: 28px;
-    }
+.services_section .titlepage h2,
+.contact h2 {
+    font-size: 28px !important;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+section {
+    padding: 50px 0 !important;
+}
+
 
 }
 
