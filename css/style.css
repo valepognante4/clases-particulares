@@ -940,7 +940,7 @@ ul.social_icon li a:hover {
 .banner_main .row {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: flex-start !important;
 }
 
 .text-bg {
