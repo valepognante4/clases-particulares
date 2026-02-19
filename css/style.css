@@ -921,51 +921,34 @@ ul.social_icon li a:hover {
 
 
     /* ================= HERO ================= */
+/* ================= HERO MOBILE FIX DEFINITIVO ================= */
+
 .head_top {
-    min-height: auto;              /* quitamos el 100vh */
-    display: block;
-    padding-top: 40px;             /* menos espacio arriba */
+    padding-top: 0 !important;
 }
 
 .banner_main {
-    width: 100%;
-    padding: 30px 20px 20px !important;
-    margin: 0 !important;
+    padding: 0 20px !important;
 }
 
-.banner_main .row {
-    flex-direction: column !important;
-    gap: 20px;                     /* espacio controlado */
-}
-/* RESET ESPACIOS HERO */
-.head_top,
-.banner_main,
-.banner_main .row {
-    margin: 0 !important;
+.banner_main .container {
+    padding-top: 100px !important;  /* 👈 baja todo el bloque */
 }
 
-/* TEXTO */
 .text-bg {
-    width: 100% !important;
-    text-align: left !important;
-    margin-top: 120px;
+    margin-top: 0 !important;
 }
 
 .text-bg h1 {
-    font-size: 34px;
-    line-height: 1.1;
-    margin: 0 0 5px 0 !important;         /* más pegado */
+    margin: 0 !important;
+    line-height: 1.05;
 }
 
 .text-bg p {
-    font-size: 16px;
-     margin: 0 0 15px 0 !important;         /* apenas separado */
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
 }
 
-.text-bg a {
-    display: inline-block;
-    margin-bottom: 20px;          /* pegado a la descripción */
-}
 
 /* IMAGEN */
 .text-img {
