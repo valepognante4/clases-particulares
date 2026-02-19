@@ -933,9 +933,8 @@ ul.social_icon li a:hover {
 }
 
 .banner_main .container {
-    padding-top: 80px !important;
+    padding: 80px 20px 0 20px !important;
 }
-
 
 .banner_main .row {
     display: flex !important;
@@ -949,7 +948,6 @@ ul.social_icon li a:hover {
     padding: 0 !important;
     text-align: left !important;
 }
-
 
 .banner_main {
     padding: 90px 0 40px 0 !important;
