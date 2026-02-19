@@ -954,7 +954,12 @@ ul.social_icon li a:hover {
 }
 
 .banner_main {
-    padding: 90px 0 40px 0 !important;
+    padding: 60px 0 30px 0 !important;
+}
+
+.banner_main .col-md-6:last-child {
+    display: flex !important;
+    justify-content: flex-end !important;
 }
 
 .text-bg h1 {
@@ -983,18 +988,16 @@ ul.social_icon li a:hover {
 
 
 .text-img img {
+    display: block;
     width: 95% !important;
     max-width: 360px;
     height: auto;
+    margin-left: auto;
 }
-
 
 .head_top::after {
     display: none;
 }
-
-
- 
 
     /* ================= SERVICIOS ================= */
 
@@ -1005,31 +1008,22 @@ ul.social_icon li a:hover {
 
     /* ================= MODALIDAD ================= */
 
-    .modalidad-circulos {
+     .modalidad-circulos {
     display: flex !important;
-    gap: 20px;
+    gap: 25px;
     overflow-x: auto;
     padding: 10px 20px;
-    }
+}
 
 .modalidad-circulos .item {
     flex: 0 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
-    /* ================= SOBRE MIS CLASES ================= */
-
-.modalidad-circulos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.modalidad-circulos .item:hover {
+    z-index: 10;
 }
-
-.modalidad-circulos .item:first-child {
-    grid-column: span 2;
-}
-
-
-
 
     /* ================= CONTACTO ================= */
     /* ================= TITULOS IGUALES ================= */
