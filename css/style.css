@@ -988,11 +988,12 @@ ul.social_icon li a:hover {
 
 
 .text-img img {
-    display: block;
-    width: 95% !important;
-    max-width: 360px;
+    width: 85% !important;
+    max-width: 320px;
     height: auto;
+    display: block;
     margin-left: auto;
+    margin-right: 20px;
 }
 
 .head_top::after {
@@ -1007,22 +1008,31 @@ ul.social_icon li a:hover {
 
 
     /* ================= MODALIDAD ================= */
+/* ================= MODALIDAD ================= */
 
-     .modalidad-circulos {
-    display: flex !important;
+.modalidad-box {
+    padding: 0 20px;
+}
+
+.modalidad-circulos {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    overflow-x: auto;
-    padding: 10px 20px;
+    justify-items: center;
 }
 
-.modalidad-circulos .item {
-    flex: 0 0 auto;
-    position: relative;
-    z-index: 1;
+.circulo {
+    width: 85px;   /* ajustá si querés más chicos */
+    height: 85px;
 }
 
-.modalidad-circulos .item:hover {
-    z-index: 10;
+/* Desactivar hover en mobile */
+.circulo:hover {
+    transform: none !important;
+}
+
+.circulo::after {
+    display: none !important;
 }
 
     /* ================= CONTACTO ================= */
