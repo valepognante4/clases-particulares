@@ -933,7 +933,7 @@ ul.social_icon li a:hover {
 }
 
 .banner_main .container {
-    padding-top: 80px !important; /* espacio arriba controlado */
+    padding-top: 100px !important; /* espacio arriba controlado */
     text-align: center !important;
 }
 
@@ -951,15 +951,17 @@ ul.social_icon li a:hover {
 }
 
 .text-bg h1 {
-    margin: 0 !important;
+    margin: 0 0 8px 0 !important;
+    line-height: 1.1;
 }
 
 .text-bg p {
-    margin: 5px 0 15px 0 !important;
+    margin: 0 0 14px 0 !important;
+    font-size: 16px;
 }
 
 .text-bg a {
-    margin: 0 0 20px 0 !important;
+    margin: 0 !important;
     display: inline-block !important;
 }
 
