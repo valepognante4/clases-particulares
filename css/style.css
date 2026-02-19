@@ -921,41 +921,55 @@ ul.social_icon li a:hover {
 
 
     /* ================= HERO ================= */
-
-/* ================= HERO ================= */
-
 .head_top {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    min-height: auto;              /* quitamos el 100vh */
+    display: block;
+    padding-top: 40px;             /* menos espacio arriba */
 }
 
 .banner_main {
     width: 100%;
-    padding: 100px 20px 40px;
-}
-.banner_main .row {
-    flex-direction: column !important;
+    padding: 40px 20px 20px;       /* antes tenías 100px arriba */
 }
 
+.banner_main .row {
+    flex-direction: column !important;
+    gap: 20px;                     /* espacio controlado */
+}
+
+/* TEXTO */
 .text-bg {
     width: 100% !important;
     text-align: left !important;
 }
 
+.text-bg h1 {
+    font-size: 34px;
+    line-height: 1.1;
+    margin-bottom: 8px;           /* más pegado */
+}
+
+.text-bg p {
+    font-size: 16px;
+    margin-bottom: 12px;          /* apenas separado */
+}
+
+.text-bg a {
+    display: inline-block;
+    margin-bottom: 20px;          /* pegado a la descripción */
+}
+
+/* IMAGEN */
 .text-img {
     width: 100% !important;
+    display: flex;
+    justify-content: center;
 }
 
 .text-img img {
-    width: 100% !important;
-    max-width: none !important;
-}
-
-.text-bg h1,
-.text-bg p,
-.text-bg a {
-    margin-bottom: 10px;
+    width: 95% !important;        /* bien grande */
+    max-width: 380px;
+    height: auto;
 }
 
 .head_top::after {
