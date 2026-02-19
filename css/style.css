@@ -933,9 +933,9 @@ ul.social_icon li a:hover {
 }
 
 .banner_main .container {
-    padding-top: 100px !important; /* espacio arriba controlado */
-    text-align: center !important;
+    padding-top: 80px !important;
 }
+
 
 .banner_main .row {
     display: flex !important;
@@ -947,26 +947,29 @@ ul.social_icon li a:hover {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    text-align: center !important;
+    text-align: left !important;
 }
+
 
 .banner_main {
     padding: 90px 0 40px 0 !important;
 }
 
 .text-bg h1 {
-    margin: 0 0 6px 0 !important;
-    line-height: 1.1;
+    margin: 0 0 4px 0 !important;
+    line-height: 1.05 !important;
 }
 
 .text-bg p {
-    margin: 0 0 12px 0 !important;
+    margin: 0 0 8px 0 !important;
     padding: 0 !important;
+    line-height: 1.4 !important;
 }
 
 .text-bg a {
     margin: 0 !important;
 }
+
 
 .text-img {
     margin: 0 !important;
