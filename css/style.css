@@ -934,6 +934,7 @@ ul.social_icon li a:hover {
         position: relative;
         z-index: 2;
     }
+    
 
     .banner_main .row {
         flex-direction: column;
@@ -943,8 +944,12 @@ ul.social_icon li a:hover {
 
     /* TEXTO */
     .text-bg {
-        max-width: 75%;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
     }
+
 
     .text-bg h1 {
         font-size: 30px;
@@ -957,17 +962,18 @@ ul.social_icon li a:hover {
     }
 
     /* CÍRCULO */
-    .head_top::after {
-        content: "";
-        position: absolute;
-        width: 420px; /* más chico */
-        height: 420px;
-        background: #dfe5cf;
-        border-radius: 50%;
-        right: -180px; /* más a la derecha */
-        top: 80px;
-        z-index: 0;
+     .head_top::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background: #dfe5cf;
+    border-radius: 50%;
+    right: -120px;
+    top: 60px;
+    z-index: 1;
     }
+
 
     /* IMAGEN */
     .text-img {
