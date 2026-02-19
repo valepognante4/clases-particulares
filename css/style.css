@@ -928,11 +928,14 @@ ul.social_icon li a:hover {
     background: #b6bfa4;
     position: relative;
     overflow: hidden;
+    min-height: auto;
+    height: auto;
+    display: block;
 }
 
 /* CONTENIDO */
 .banner_main {
-    padding: 120px 25px 60px 25px;
+    padding: 160px 25px 80px 25px;
 }
 
 /* FORZAMOS COLUMNA */
@@ -946,8 +949,8 @@ ul.social_icon li a:hover {
 
     .text-bg {
     width: 100%;
-    max-width: 100%;
-    margin-top: 20px;
+    max-width: 320px;
+    margin-top: 40px;
 }
 
 .text-bg h1 {
@@ -977,8 +980,8 @@ ul.social_icon li a:hover {
 }
 
 .text-img img {
-    width: 90%;
-    max-width: 360px;
+    width: 100%;
+    max-width: 420px;
 }
 
 
