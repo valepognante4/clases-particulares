@@ -921,48 +921,53 @@ ul.social_icon li a:hover {
 
 
     /* ================= HERO ================= */
-/* ================= HERO MOBILE FIX DEFINITIVO ================= */
-/* ================= HERO MOBILE CENTRADO ================= */
+/* ===== HERO MOBILE RESET TOTAL ===== */
+
+.head_top,
+.banner_main,
+.banner_main .container,
+.banner_main .row,
+.banner_main .col-md-6 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
 .banner_main .container {
-    padding-top: 90px !important;   /* separa del header */
-    text-align: center;
+    padding-top: 80px !important; /* espacio arriba controlado */
+    text-align: center !important;
 }
 
 .banner_main .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
 }
 
 .text-bg {
     width: 100% !important;
     margin: 0 !important;
-    text-align: center;
+    padding: 0 !important;
+    text-align: center !important;
 }
 
-/* TÍTULO */
 .text-bg h1 {
-    margin: 0 0 8px 0 !important;
-    line-height: 1.1;
+    margin: 0 !important;
 }
 
-/* DESCRIPCIÓN */
 .text-bg p {
-    margin: 0 0 15px 0 !important;
+    margin: 5px 0 15px 0 !important;
 }
 
-/* BOTÓN */
 .text-bg a {
-    display: inline-block;
-    margin: 0 0 25px 0 !important;
+    margin: 0 0 20px 0 !important;
+    display: inline-block !important;
 }
 
-/* IMAGEN */
 .text-img {
-    width: 100% !important;
-    display: flex;
-    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .text-img img {
