@@ -922,6 +922,8 @@ ul.social_icon li a:hover {
 
     /* ================= HERO ================= */
 
+/* ================= HERO ================= */
+
 .head_top {
     min-height: 100vh;
     display: flex;
@@ -930,47 +932,40 @@ ul.social_icon li a:hover {
 
 .banner_main {
     width: 100%;
-    padding: 120px 20px 60px;
+    padding: 100px 20px 40px;
 }
 
 .banner_main .row {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .text-bg {
     text-align: left;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-.text-bg h1 {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 12px;
-}
-
-.text-bg p {
-    font-size: 15px;
-    line-height: 24px;
-    margin-bottom: 20px;
+.text-bg h1,
+.text-bg p,
+.text-bg a {
+    margin-bottom: 10px;
 }
 
 .text-img {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .text-img img {
     width: 100%;
-    max-width: 320px;
     height: auto;
 }
 
 .head_top::after {
     display: none;
 }
+
 
  
 
