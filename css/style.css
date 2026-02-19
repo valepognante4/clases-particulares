@@ -976,10 +976,11 @@ ul.social_icon li a:hover {
 
 .text-img {
     margin: 0 !important;
-    padding: 0 !important;
+    padding-right: 20px !important;
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-end !important;
 }
+
 
 .text-img img {
     width: 95% !important;
@@ -1004,13 +1005,16 @@ ul.social_icon li a:hover {
 
     /* ================= MODALIDAD ================= */
 
-    .modalidad h2 {
-        font-size: 24px;
+    .modalidad-circulos {
+    display: flex !important;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 20px;
     }
 
-    .modalidad-box {
-        padding: 28px 18px;
-    }
+.modalidad-circulos .item {
+    flex: 0 0 auto;
+}
 
     /* ================= SOBRE MIS CLASES ================= */
 
