@@ -883,8 +883,7 @@ ul.social_icon li a:hover {
 
     .header {
         padding: 12px 18px;
-        background-color: rgba(182, 191, 164, 0.95);
-        backdrop-filter: blur(4px);
+        background: transparent;
     }
 
     .header .row {
@@ -923,48 +922,67 @@ ul.social_icon li a:hover {
 
     /* ================= HERO ================= */
 
-.head_top {
-    background: #b6bfa4 !important;
-    position: relative;
-    overflow: hidden;
-}
+    /* HERO CONTENEDOR */
+    .head_top {
+        background: #b6bfa4;
+        position: relative;
+        overflow: hidden;
+    }
 
-.banner_main {
-    padding: 90px 0 60px 0;
-}
+    .banner_main {
+        padding: 140px 20px 80px 20px;
+        position: relative;
+        z-index: 2;
+    }
 
-.banner_main .row {
-    flex-direction: column;
-    text-align: center;
-}
+    .banner_main .row {
+        flex-direction: column;
+        align-items: flex-start; /* clave */
+        text-align: left; /* clave */
+    }
 
-/* ================= IMAGEN ================= */
+    /* TEXTO */
+    .text-bg {
+        max-width: 75%;
+    }
 
-.text-img {
-    margin-top: 30px;
-}
+    .text-bg h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
 
-.text-img img {
-    width: 85%;
-    max-width: 320px;
-    display: block;
-    margin: 0 auto;
-}
+    .text-bg p {
+        font-size: 16px;
+        line-height: 24px;
+    }
 
-/* ================= CÍRCULO ================= */
+    /* CÍRCULO */
+    .head_top::after {
+        content: "";
+        position: absolute;
+        width: 420px; /* más chico */
+        height: 420px;
+        background: #dfe5cf;
+        border-radius: 50%;
+        right: -180px; /* más a la derecha */
+        top: 80px;
+        z-index: 0;
+    }
 
-.head_top::after {
-    width: 500px;
-    height: 500px;
-    right: -200px;
-    top: -50px;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    background: #dfe5cf; /* mismo verde claro del desktop */
-    border-radius: 50%;
-}
+    /* IMAGEN */
+    .text-img {
+        position: relative;
+        z-index: 3;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
+    .text-img img {
+        width: 75%; /* más grande */
+        max-width: 300px;
+    }
 
     /* ================= SERVICIOS ================= */
 
