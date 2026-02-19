@@ -922,43 +922,60 @@ ul.social_icon li a:hover {
 
     /* ================= HERO ================= */
 /* ===== HERO MOBILE RESET TOTAL ===== */
-/* ===== HERO MOBILE LIMPIO Y ORDENADO ===== */
 
-/* Controla cuánto baja todo el bloque */
-.banner_main .container {
-    padding-top: 100px !important; /* ajustá 90px - 120px si querés */
+.head_top,
+.banner_main,
+.banner_main .container,
+.banner_main .row,
+.banner_main .col-md-6 {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-/* Mantener alineado a la izquierda */
+.banner_main .container {
+    padding-top: 80px !important; /* espacio arriba controlado */
+    text-align: center !important;
+}
+
+.banner_main .row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
 .text-bg {
+    width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    text-align: left !important;
+    text-align: center !important;
 }
 
-/* TÍTULO */
 .text-bg h1 {
-    margin: 0 0 8px 0 !important;  /* elimina espacio raro arriba */
-    line-height: 1.1;
+    margin: 0 !important;
 }
 
-/* DESCRIPCIÓN */
 .text-bg p {
-    margin: 0 0 12px 0 !important; /* pegado al título */
+    margin: 5px 0 15px 0 !important;
 }
 
-/* BOTÓN */
 .text-bg a {
-    margin: 0 0 20px 0 !important; /* pegado a la descripción */
-    display: inline-block;
+    margin: 0 0 20px 0 !important;
+    display: inline-block !important;
 }
 
-/* IMAGEN */
+.text-img {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
 .text-img img {
     width: 95% !important;
-    max-width: 380px;
+    max-width: 360px;
     height: auto;
 }
+
 
 .head_top::after {
     display: none;
